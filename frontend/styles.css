@@ -1,15 +1,20 @@
 .header {
+  display: flex;
+  align-items: -100px;
   height: 100px;
   background-color: blue;
 }
 
 .header-left {
+  flex: 1;
+  background-color: yellow;
 }
 
 .horizontal-logo {
-  object-fit: 50;
-  height: 400;
+  width: 280px;
+  height: auto;
 }
 
 .header-right {
+  flex: 2;
 }
