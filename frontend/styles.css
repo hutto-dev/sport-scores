@@ -1,0 +1,15 @@
+.header {
+  height: 100px;
+  background-color: blue;
+}
+
+.header-left {
+}
+
+.horizontal-logo {
+  object-fit: 50;
+  height: 400;
+}
+
+.header-right {
+}
