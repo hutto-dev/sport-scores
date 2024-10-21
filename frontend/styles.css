@@ -1,20 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 .header {
   display: flex;
-  align-items: -100px;
-  height: 100px;
-  background-color: blue;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  border: 2px solid black;
+  font-family: bungee, roboto condensed, impact, arial;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
 }
 
 .header-left {
-  flex: 1;
-  background-color: yellow;
+  display: flex;
+  align-items: baseline;
 }
 
 .horizontal-logo {
   width: 280px;
   height: auto;
+  overflow: ;
 }
 
 .header-right {
-  flex: 2;
+  display: flex;
+  align-items: flex-end;
 }
