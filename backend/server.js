@@ -22,6 +22,11 @@ config();
 const app = express();
 const port = process.env.PORT || 3000;
 
+// ADDED THIS CODE TO POP UP ON WEBSITE AT THE BEGINNING AND ON POSTMAN
+app.get("/", (req, res) => {
+  res.send("Working!");
+});
+
 // if the port isn't on test mode, run on assigned port or 3000 by default
 if (process.env.NODE_ENV !== "test") {
   app.listen(port, () => console.log(`Running on port ${port}`));
