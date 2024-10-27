@@ -12,6 +12,10 @@ const scheduleRoutes = require("./scheduleRoutes");
 
 const gameRoutes = require("./gameRoutes");
 
+const scoreRoutes = require("./scoreRoutes");
+
+const reportScoreRoutes = require("./reportScoreRoutes");
+
 // using 'router' to run the router function and make specific routes
 const router = Router();
 
@@ -20,5 +24,7 @@ router.use("/user", userRoutes);
 router.use("/files", csvRoutes);
 router.use("/api", scheduleRoutes);
 router.use("/api", gameRoutes);
+router.use("/api", scoreRoutes);
+router.use("/api", reportScoreRoutes);
 
 module.exports = router;

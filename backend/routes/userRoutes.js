@@ -1,3 +1,13 @@
+const express = require("express");
+const router = express.Router();
+const { loginUser } = require("../controllers/userController");
+
+// Route for user login
+router.post("/login", loginUser);
+
+module.exports = router;
+
+/*
 // doing all route files second. I still don't know what im doing yet
 
 // yes, starts router from express
@@ -21,4 +31,4 @@ router.route("/:id").get(validateUserBody, getUser);
 router.route("/").put(validateUserBody, updateUser);
 router.route("/:id").delete(validateUserBody, removeUser);
 
-module.exports = router;
+module.exports = router; */

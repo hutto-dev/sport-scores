@@ -6,14 +6,18 @@ const express = require("express");
 // assigning body-parser that helps break down code into readable json code
 const bodyParser = require("body-parser");
 
-// assigning all Routes ?
-const allRoutes = require("./routes");
-
 // assigning cors which is that get,post, thing i think ?
 const cors = require("cors");
 
 // grabbing config only from dotenv to use
 const { config } = require("dotenv");
+
+// assigning all Routes ?
+const allRoutes = require("./routes");
+const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
+const scoreRoutes = require("./routes/scoreRoutes");
+const reportScoreRoutes = require("./routes/reportScoreRoutes");
 
 //loads environment vars from .env
 config();
@@ -40,5 +44,9 @@ app.use(bodyParser.json());
 
 // lets us load all our routes and start making requests
 app.use(allRoutes);
+app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
+app.use("/scores", scoreRoutes);
+app.use("/reports", reportScoreRoutes);
 
 module.exports = { app };
