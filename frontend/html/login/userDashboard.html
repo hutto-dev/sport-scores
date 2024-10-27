@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to the Dashboard!</h1>
+    <p>This is where you can manage your account.</p>
+
+    <!-- Report Game Score Section -->
+    <h2>Report Game Score</h2>
+    <form id="scoreForm">
+      <label for="game">Select Game:</label>
+      <select id="game" name="game" required>
+        <!-- Option elements will be populated with game details via JavaScript -->
+      </select>
+
+      <label for="homeScore">Home Team Score:</label>
+      <input type="number" id="homeScore" name="homeScore" required />
+
+      <label for="awayScore">Away Team Score:</label>
+      <input type="number" id="awayScore" name="awayScore" required />
+
+      <button type="submit">Submit Score</button>
+    </form>
+    <p id="responseMessage"></p>
+
+    <script src="/frontend/js/scoreReporting.js"></script>
+  </body>
+</html>

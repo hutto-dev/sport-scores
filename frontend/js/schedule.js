@@ -1,7 +1,7 @@
 fetch("http://localhost:3000/api/game")
   .then((response) => response.json())
   .then((data) => {
-    const gameContainer = document.getElementById("game-container");
+    const gameContainer = document.querySelector("game-container");
 
     // Check if the data is empty
     if (data.length === 0) {
