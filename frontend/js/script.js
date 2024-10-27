@@ -26,6 +26,7 @@
     console.error("Error fetching schedule:", error);
   }); */
 
+// this works too but for games
 fetch("http://localhost:3000/api/game")
   .then((response) => response.json())
   .then((data) => {
@@ -38,13 +39,16 @@ fetch("http://localhost:3000/api/game")
     }
 
     // Iterate through the game data and create HTML elements for each game
+
     data.forEach((game) => {
       const gameDiv = document.createElement("div");
       gameDiv.className = "game-square"; // Add a class for styling
       gameDiv.innerHTML = `
-       <h3>${game.opponent}</h3>
+       <p>Away Team: ${game.away_team_name}</p>
+        <p>Home Team: ${game.home_team_name}</p>
        <p>Date: ${game.game_date}</p>
-       <p>Location: ${game.location}</p>
+       <p>Time: ${game.game_time}</p>
+       <P> ${game.status}</p>
      `;
       gameContainer.appendChild(gameDiv);
     });

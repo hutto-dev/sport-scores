@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MS&#179; - Middle School Sports Scores</title>
-    <link rel="stylesheet" href="/frontend/styles/home.css" />
+    <link rel="stylesheet" href="/frontend/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,17 +30,19 @@
       <div class="header-right">
         <nav>
           <a href="index.html">Home</a>
-          <a href="./pages/schools.html">Schools</a>
-          <a href="./pages/sports.html">Sports</a>
-          <a href="./pages/login.html">Log In</a>
+          <a href="/frontend/html/schools/schoolsList.html">Schools</a>
+          <a href="/frontend/html/sports/sportsList.html">Sports</a>
+          <a href="/frontend/html/login/loginHome.html">Log In</a>
         </nav>
       </div>
     </header>
 
     <!-- Sample HTML structure for displaying the schedule -->
     <div id="schedule-container"></div>
-    <div id="game-container"></div>
+    <div id="game-container">
+      <div id="away-section"></div>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
   </body>
 </html>

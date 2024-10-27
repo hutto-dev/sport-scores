@@ -18,3 +18,9 @@ a {
 a:hover {
   color: #008a97;
 }
+
+.game-square {
+  color: blue;
+  background-color: yellow;
+  display: flex;
+}

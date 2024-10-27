@@ -1,4 +1,4 @@
-.container {
+#game-container {
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -8,6 +8,7 @@
   border-radius: 5px;
   padding: 30px;
   margin-top: 100px;
+  box-sizing: border-box;
 }
 
 .schedule-box {
@@ -20,7 +21,7 @@
   border-radius: 5px;
   margin: 10px;
   border: 2px solid black;
-  font-family: oswald;
+  font-family: oswald, sans-serif;
   font-weight: 550;
 }
 
@@ -37,11 +38,15 @@
   padding-left: 8px;
 }
 
-.away-section {
+.away-section,
+.home-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1;
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 0.2;
   border-left-width: 0px;
   border-right-width: 0px;
   border-top-width: 0px;
@@ -55,12 +60,6 @@
 
   margin-right: 15px;
   font-size: 18px;
-}
-.home-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1;
 }
 
 .home-score {
@@ -78,9 +77,12 @@
   flex: 1;
   font-size: 12px;
   margin-left: 5px;
+  padding: 0 5px;
+  max-height: 40px;
+  overflow: hidden;
 }
 
-.status {
+.status-section {
   flex: -1;
   justify-content: space-between;
   margin-right: 10px;
