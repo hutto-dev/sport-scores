@@ -222,7 +222,7 @@ a:hover {
   margin-right: 15px;
 }
 
-.logo {
+.little-logo {
   height: 120px;
 }
 
@@ -239,4 +239,46 @@ footer {
   margin: 0 auto;
   padding: 20px;
   text-align: center; /* Center-align content for a balanced look */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Stack the elements vertically */
+  .container,
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-left,
+  .main-middle,
+  .main-right {
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0;
+  }
+
+  .rankings-varsity,
+  .rankings-jv {
+    width: 100%;
+  }
+
+  /* Adjust font size */
+  nav a {
+    font-size: 16px;
+  }
+
+  .quick-links-container,
+  .problem-container,
+  .report-score-container,
+  .upcoming-games-container {
+    width: 80%; /* or another appropriate percentage */
+    margin: 10px auto;
+  }
+
+  /* Hide large logos or make them smaller */
+  .horizontal-logo,
+  .little-logo {
+    height: auto;
+    width: 70%; /* Adjust to scale down for mobile */
+  }
 }

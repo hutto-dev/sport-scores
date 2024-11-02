@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MS&#179; - Middle School Sports Scores</title>
+    <title>MS&#179; || Login</title>
     <link rel="stylesheet" href="/frontend/css/home.css" />
+    <link rel="stylesheet" href="/frontend/css/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +30,7 @@
       <div class="logo">
         <img
           class="horizontal-logo"
-          src="./css/images/horizontal_logo-cropped.svg"
+          src="/frontend/css/images/horizontal_logo-cropped.svg"
         />
       </div>
       <div class="nav-links">
@@ -42,43 +43,32 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="main-container">
-          <div class="main-left">
-            <div class="quick-links-container">QUICK LINKS</div>
-            <div class="problem-container">PROBLEM?</div>
-            <div class="main-logo">
-              <img src="./css/images/ms3_logo.svg" class="little-logo" />
-            </div>
-          </div>
-          <div class="main-middle">
-            <div class="rankings-varsity">
-              <div class="rankings-title">MAC VARSITY BASKETBALL RANKINGS</div>
-              <div class="rankings-container">
-                <div class="boys-varsity">BOYS VARSITY</div>
-                <div class="girls-varsity">GIRLS VARSITY</div>
+      <div class="login-container">
+        <div class="login-box">
+          <div class="login-words">LOG IN</div>
+          <div class="form-box">
+            <form id="loginForm">
+              <input
+                type="text"
+                id="username"
+                placeholder="USERNAME"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                placeholder="PASSWORD"
+                required
+              />
+              <div class="button-container">
+                <button type="submit" id="login-button">LOGIN</button>
               </div>
-            </div>
-            <div class="rankings-varsity">
-              <div class="rankings-title">MAC JV BASKETBALL RANKINGS</div>
-              <div class="rankings-container">
-                <div class="boys-varsity">BOYS JV</div>
-                <div class="girls-varsity">GIRLS JV</div>
-              </div>
-            </div>
-          </div>
-          <div class="main-right">
-            <div class="report-score-container">
-              REPORT A SCORE
-              <button class="admin-button">ADMIN LOGIN</button>
-            </div>
-            <div class="upcoming-games-container">UPCOMING GAMES</div>
+            </form>
           </div>
         </div>
       </div>
     </main>
 
-    <script src="JS/script.js"></script>
+    <script src="/frontend/js/login.js"></script>
   </body>
-  <footer class="footer-content">hi</footer>
 </html>
