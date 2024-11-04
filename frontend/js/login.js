@@ -1,8 +1,8 @@
+// login.js
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
-  console.log("loginform:", loginForm);
+
   if (loginForm) {
-    // Check if loginForm exists
     loginForm.addEventListener("submit", async (event) => {
       event.preventDefault(); // Prevent default form submission
 
@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!response.ok) {
           const error = await response.json();
-          console.error("Login failed:", error);
           alert(error.error || "Login failed!");
           return;
         }
 
         const data = await response.json();
-        console.log("Login successful:", data);
+        localStorage.setItem("token", data.token); // Save the JWT token
+        localStorage.setItem("schoolId", data.schoolId); // Save the school ID
 
         // Redirect to dashboard
         window.location.href = "userDashboard.html"; // Change to your dashboard page

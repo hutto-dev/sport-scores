@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -228,7 +228,7 @@ a:hover {
 
 footer {
   width: 100%;
-  background-color: #333; /* Dark background for contrast */
+  background-color: #333; /* Dark background for contrast
   color: white;
   padding: 20px 0;
 }
@@ -238,12 +238,13 @@ footer {
   border-top: 1px solid white;
   margin: 0 auto;
   padding: 20px;
-  text-align: center; /* Center-align content for a balanced look */
+  text-align: center; /* Center-align content for a balanced look 
 }
 
-/* Mobile Styles */
+Help that i've gotten
+Mobile Styles
 @media (max-width: 768px) {
-  /* Stack the elements vertically */
+  /* Stack the elements vertically 
   .container,
   .main-container {
     flex-direction: column;
@@ -253,7 +254,7 @@ footer {
   .main-left,
   .main-middle,
   .main-right {
-    width: 100%; /* Full width on mobile */
+    width: 100%; /* Full width on mobile 
     margin: 10px 0;
   }
 
@@ -262,7 +263,7 @@ footer {
     width: 100%;
   }
 
-  /* Adjust font size */
+  /* Adjust font size 
   nav a {
     font-size: 16px;
   }
@@ -271,14 +272,14 @@ footer {
   .problem-container,
   .report-score-container,
   .upcoming-games-container {
-    width: 80%; /* or another appropriate percentage */
+    width: 80%; /* or another appropriate percentage 
     margin: 10px auto;
   }
 
-  /* Hide large logos or make them smaller */
+  /* Hide large logos or make them smaller 
   .horizontal-logo,
   .little-logo {
     height: auto;
-    width: 70%; /* Adjust to scale down for mobile */
+    width: 70%; /* Adjust to scale down for mobile 
   }
-}
+} 
