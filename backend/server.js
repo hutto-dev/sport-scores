@@ -1,52 +1,49 @@
-// I'm doing this first but i dont know if this is right. Started node.js and express with help of chatgpt...then this
+// Load environment variables from .env file
+require("dotenv").config(); // Ensure this is at the top
 
-// assigning express app (require is a node.js function used to load modules)
+// Assigning express app (require is a node.js function used to load modules)
 const express = require("express");
 
-// assigning body-parser that helps break down code into readable json code
+// Assigning body-parser that helps break down code into readable JSON
 const bodyParser = require("body-parser");
 
-// assigning cors which is that get,post, thing i think ?
+// Assigning cors which is used to enable CORS
 const cors = require("cors");
 
-// grabbing config only from dotenv to use
-const { config } = require("dotenv");
-
-// assigning all Routes ?
-const allRoutes = require("./routes");
-const authRoutes = require("./routes/authRoutes");
+// Assigning all Routes
 const userRoutes = require("./routes/userRoutes");
-const scoreRoutes = require("./routes/scoreRoutes");
-const reportScoreRoutes = require("./routes/reportScoreRoutes");
+const gameRoutes = require("./routes/gameRoutes");
+const rankingRoutes = require("./routes/rankingRoutes");
 
-//loads environment vars from .env
-config();
-
-// start the app and listen for requests on the port
+// Start the app and listen for requests on the port
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Middleware
+app.use(cors()); // Enable CORS
+app.use(bodyParser.json()); // Parse JSON requests
 
 // ADDED THIS CODE TO POP UP ON WEBSITE AT THE BEGINNING AND ON POSTMAN
 app.get("/", (req, res) => {
   res.send("Working!");
 });
 
-// if the port isn't on test mode, run on assigned port or 3000 by default
+// Define the /games/:schoolId/games route
+app.get("/games/:schoolId/games", (req, res) => {
+  const schoolId = req.params.schoolId; // Get schoolId from the route parameter
+
+  // Placeholder response for testing
+  res.json({ message: `Games for school ID ${schoolId}` });
+});
+
+// Load all routes
+app.use("/users", userRoutes);
+app.use("/games", gameRoutes);
+app.use("/rankings", rankingRoutes);
+
+// Start the server if not in test mode
 if (process.env.NODE_ENV !== "test") {
   app.listen(port, () => console.log(`Running on port ${port}`));
 }
-
-// using cors library to prevent annoying cors issues
-app.use(cors());
-
-// allows us to get the info requested in json format - very important for post requests so we can read it!
-app.use(bodyParser.json());
-
-// lets us load all our routes and start making requests
-app.use(allRoutes);
-app.use("/auth", authRoutes);
-app.use("/users", userRoutes);
-app.use("/scores", scoreRoutes);
-app.use("/reports", reportScoreRoutes);
 
 module.exports = { app };
