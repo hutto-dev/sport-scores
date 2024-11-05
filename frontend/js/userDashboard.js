@@ -21,6 +21,10 @@ async function fetchGames() {
 
   // Extract schoolId from the token
   const schoolId = getSchoolIdFromToken();
+  if (!schoolId) {
+    console.error("School ID missing from the token.");
+    return;
+  }
 
   try {
     const response = await fetch(
@@ -69,6 +73,7 @@ function populateGamesDropdown(games) {
   });
 }
 
+/*
 // Handle score submission
 document
   .getElementById("scoreForm")
@@ -108,21 +113,7 @@ document
     } catch (error) {
       console.error("Error submitting score:", error);
     }
-  });
-
-// Function to retrieve school ID from the JWT (optional if not used)
-function getSchoolIdFromToken() {
-  const token = localStorage.getItem("token");
-  if (!token) return null;
-
-  try {
-    const payload = JSON.parse(atob(token.split(".")[1]));
-    return payload.schoolId; // Assuming the token contains schoolId
-  } catch (error) {
-    console.error("Failed to decode token:", error);
-    return null;
-  }
-}
+  }); */
 
 console.log("Token:", localStorage.getItem("token"));
-console.log("Schedule ID:", localStorage.getItem("scheduleId"));
+console.log("School ID:", localStorage.getItem("schoolId"));
