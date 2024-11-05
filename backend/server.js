@@ -28,14 +28,6 @@ app.get("/", (req, res) => {
   res.send("Working!");
 });
 
-// Define the /games/:schoolId/games route
-app.get("/games/:schoolId/games", (req, res) => {
-  const schoolId = req.params.schoolId; // Get schoolId from the route parameter
-
-  // Placeholder response for testing
-  res.json({ message: `Games for school ID ${schoolId}` });
-});
-
 // Load all routes
 app.use("/users", userRoutes);
 app.use("/games", gameRoutes);

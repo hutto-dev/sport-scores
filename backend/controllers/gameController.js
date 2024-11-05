@@ -1,32 +1,32 @@
 const db = require("../database/db");
 
-// Get all games for a specific schedule
-exports.getGames = async (req, res) => {
-  const schoolId = req.params.schoolId; // Extract the schoolId from the URL
+// Get all games for a specific school by user
+exports.getGamesByUser = async (req, res) => {
+  const { schoolId } = req.params; // Extract schoolId from the URL
+  const userId = req.userId; // Get userId from the authenticated user
+
   try {
+    // Query games where the user's school_id matches either home_school_id or away_school_id
     const result = await db.query(
       `
       SELECT 
-        game.game_id,
-        home_school.name AS home_team_name,
-        away_school.name AS away_team_name,
-        game.date,
-        game.time
+        g.game_id, 
+        g.date, 
+        g.time, 
+        COALESCE(g.score_home, 0) AS home_score, 
+        COALESCE(g.score_away, 0) AS away_score
       FROM 
-        game
-      JOIN 
-        schedule AS home_schedule ON game.schedule_home_id = home_schedule.schedule_id
-      JOIN 
-        school AS home_school ON home_schedule.team_id = home_school.school_id
-      JOIN 
-        schedule AS away_schedule ON game.schedule_away_id = away_schedule.schedule_id
-      JOIN 
-        school AS away_school ON away_schedule.team_id = away_school.school_id
+        game g
       WHERE 
-        home_schedule.team_id IN (SELECT team_id FROM team WHERE school_id = $1)
-        OR away_schedule.team_id IN (SELECT team_id FROM team WHERE school_id = $1)`,
+        g.home_school_id = $1::int OR g.away_school_id = $1::int;
+      `,
       [schoolId]
     );
+
+    // Check if games are found
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: "No games found for this school" });
+    }
 
     res.json(result.rows);
   } catch (error) {
@@ -40,7 +40,7 @@ exports.reportScore = async (req, res) => {
   const { gameId, homeScore, awayScore } = req.body;
 
   // Validate gameId and scores
-  const validScore = (score) => Number.isInteger(score) && score >= 0; // Only non-negative integers
+  const validScore = (score) => Number.isInteger(score) && score >= 0;
   if (!gameId || !validScore(homeScore) || !validScore(awayScore)) {
     return res.status(400).json({ error: "Invalid input data" });
   }
