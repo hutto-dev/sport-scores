@@ -10,18 +10,23 @@ exports.getGamesByUser = async (req, res) => {
     const result = await db.query(
       `
       SELECT
-        away_team_id,
-        home_team_id,
-        g.game_id, 
-        g.date, 
-        g.time,
-        g.location,
-        COALESCE(g.score_home, 0) AS home_score, 
-        COALESCE(g.score_away, 0) AS away_score
+      g.game_id,
+      COALESCE(at.name, 'Unknown Team') AS away_team_name,
+      COALESCE(ht.name, 'Unknown Team') AS home_team_name,
+      g.date,
+       g.time,
+       g.location,
+      COALESCE(g.score_home, 0) AS home_score,
+      COALESCE(g.score_away, 0) AS away_score
       FROM 
-        game g
-      WHERE 
-        g.home_school_id = $1::int OR g.away_school_id = $1::int;
+       game g
+    LEFT JOIN 
+      team at ON g.away_team_id = at.team_id
+      LEFT JOIN 
+      team ht ON g.home_team_id = ht.team_id
+    WHERE 
+  g.home_school_id = $1::int OR g.away_school_id = $1::int;
+
       `,
       [schoolId]
     );
