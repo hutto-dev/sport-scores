@@ -69,65 +69,30 @@ function formatDate(dateString) {
     .padStart(2, "0")}/${date.getFullYear().toString().slice(-2)}`;
 }
 
-// Function to populate the games dropdown
+// Function to populate the games dropdown with team names
 function populateGamesDropdown(games) {
   const gameSelect = document.getElementById("gameSelect");
   gameSelect.innerHTML = ""; // Clear existing options
 
+  // Sort games by date
   games.sort((a, b) => new Date(a.date) - new Date(b.date));
 
   games.forEach((game) => {
     const option = document.createElement("option");
-    option.value = game.game_id; // Use your actual game ID
+    option.value = game.game_id;
 
-    // Replace these with actual team name fetching logic
-    const awayTeamName = game.away_team_id; // Replace with actual logic to get team name
-    const homeTeamName = game.home_team_id; // Replace with actual logic to get team name
+    // Use the actual team names here
+    const awayTeamName = game.away_team_name || "Unknown Team";
+    const homeTeamName = game.home_team_name || "Unknown Team";
 
     // Set the option text with formatted date and team names
     option.textContent = `${formatDate(
       game.date
     )} - ${homeTeamName} vs ${awayTeamName}`;
-
     gameSelect.appendChild(option);
   });
 }
 
-// Function to format date from ISO string to MM/DD/YY
-function formatDate(dateString) {
-  const date = new Date(dateString);
-  return `${(date.getMonth() + 1).toString().padStart(2, "0")}/${date
-    .getDate()
-    .toString()
-    .padStart(2, "0")}/${date.getFullYear().toString().slice(-2)}`;
-}
-
-// Function to populate the games dropdown
-function populateGamesDropdown(games) {
-  const gameSelect = document.getElementById("gameSelect");
-  gameSelect.innerHTML = ""; // Clear existing options
-
-  games.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-  games.forEach((game) => {
-    const option = document.createElement("option");
-    option.value = game.game_id; // Use your actual game ID
-
-    // Replace these with actual team name fetching logic
-    const awayTeamName = game.away_team_id;
-    const homeTeamName = game.home_team_id; // Replace with actual logic to get team name
-    // Replace with actual logic to get team name
-
-    // Set the option text with formatted date and team names
-    option.textContent = `${formatDate(
-      game.date
-    )} - ${homeTeamName} vs ${awayTeamName}`;
-
-    gameSelect.appendChild(option);
-  });
-}
-
-/*
 // Handle score submission
 document
   .getElementById("scoreForm")
@@ -137,9 +102,15 @@ document
     const formData = new FormData(event.target);
     const scoreData = {
       gameId: formData.get("gameSelect"), // Get selected game ID
-      homeScore: formData.get("homeScore"), // Get home score input
-      awayScore: formData.get("awayScore"), // Get away score input
+      homeScore: parseInt(formData.get("homeScore")), // Ensure scores are integers
+      awayScore: parseInt(formData.get("awayScore")),
     };
+
+    // Quick check for valid score inputs
+    if (isNaN(scoreData.homeScore) || isNaN(scoreData.awayScore)) {
+      alert("Please enter valid scores for both teams.");
+      return;
+    }
 
     try {
       const response = await fetch("http://localhost:3000/games/report", {
@@ -153,11 +124,14 @@ document
 
       const responseData = await response.json();
       const messageDiv = document.getElementById("responseMessage");
-      messageDiv.textContent = responseData.message;
 
       if (response.ok) {
+        messageDiv.textContent =
+          responseData.message || "Score reported successfully!";
         messageDiv.style.color = "green";
       } else {
+        messageDiv.textContent =
+          responseData.error || "Failed to submit score. Please try again.";
         messageDiv.style.color = "red";
         console.error(
           "Failed to submit score:",
@@ -166,8 +140,12 @@ document
       }
     } catch (error) {
       console.error("Error submitting score:", error);
+      document.getElementById("responseMessage").textContent =
+        "Network error. Please try again.";
+      document.getElementById("responseMessage").style.color = "red";
     }
-  }); */
+  });
 
+// Logging token and school ID for debugging purposes
 console.log("Token:", localStorage.getItem("token"));
 console.log("School ID:", localStorage.getItem("schoolId"));
