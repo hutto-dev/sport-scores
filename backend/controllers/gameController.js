@@ -9,10 +9,13 @@ exports.getGamesByUser = async (req, res) => {
     // Query games where the user's school_id matches either home_school_id or away_school_id
     const result = await db.query(
       `
-      SELECT 
+      SELECT
+        away_team_id,
+        home_team_id,
         g.game_id, 
         g.date, 
-        g.time, 
+        g.time,
+        g.location,
         COALESCE(g.score_home, 0) AS home_score, 
         COALESCE(g.score_away, 0) AS away_score
       FROM 
