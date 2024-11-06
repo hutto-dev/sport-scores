@@ -60,19 +60,38 @@ async function fetchGames() {
 // Call fetchGames when the dashboard loads
 document.addEventListener("DOMContentLoaded", fetchGames);
 
+// Function to format date from ISO string to MM/DD/YY
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return `${(date.getMonth() + 1).toString().padStart(2, "0")}/${date
+    .getDate()
+    .toString()
+    .padStart(2, "0")}/${date.getFullYear().toString().slice(-2)}`;
+}
+
 // Function to populate the games dropdown
 function populateGamesDropdown(games) {
   const gameSelect = document.getElementById("gameSelect");
   gameSelect.innerHTML = ""; // Clear existing options
 
+  games.sort((a, b) => new Date(a.date) - new Date(b.date));
+
   games.forEach((game) => {
     const option = document.createElement("option");
     option.value = game.game_id; // Use your actual game ID
-    option.textContent = `${game.home_team_name} vs ${game.away_team_name} on ${game.date}`;
+
+    // Replace these with actual team name fetching logic
+    const awayTeamName = game.away_team_id; // Replace with actual logic to get team name
+    const homeTeamName = game.home_team_id; // Replace with actual logic to get team name
+
+    // Set the option text with formatted date and team names
+    option.textContent = `${formatDate(
+      game.date
+    )} - ${homeTeamName} vs ${awayTeamName}`;
+
     gameSelect.appendChild(option);
   });
 }
-
 /*
 // Handle score submission
 document
