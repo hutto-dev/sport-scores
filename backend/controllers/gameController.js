@@ -46,6 +46,8 @@ exports.getGamesByUser = async (req, res) => {
 // Report a game score
 exports.reportScore = async (req, res) => {
   const { gameId, homeScore, awayScore } = req.body;
+  const userId = req.userId; // Get userId from the authenticated user
+  const isSuperAdmin = req.isSuperAdmin; // Assuming you're adding a super_admin check
 
   // Validate gameId and scores
   const validScore = (score) => Number.isInteger(score) && score >= 0;
@@ -56,7 +58,7 @@ exports.reportScore = async (req, res) => {
   try {
     // Check if the game exists
     const game = await db.query(
-      `SELECT home_team_id, away_team_id FROM game WHERE game_id = $1`, // Ensure primary key is correct
+      `SELECT home_team_id, away_team_id, score_home, score_away FROM game WHERE game_id = $1`, // Ensure primary key is correct
       [gameId]
     );
 
@@ -64,10 +66,19 @@ exports.reportScore = async (req, res) => {
       return res.status(404).json({ error: "Game not found" });
     }
 
-    console.log("gameId:", gameId);
-    console.log("homeScore:", homeScore);
-    console.log("awayScore:", awayScore);
-    console.log("Selected gameId:", gameId);
+    // Check if scores already exist (don't allow resubmission unless super_admin)
+    const existingScores = game.rows[0];
+    if (
+      existingScores.score_home !== null &&
+      existingScores.score_away !== null
+    ) {
+      if (!isSuperAdmin) {
+        return res.status(400).json({
+          error:
+            "Scores already reported. If there is an error in the score, please fill out a question form.",
+        });
+      }
+    }
 
     // Ensure the scores are integers
     const homeScoreInt = parseInt(homeScore, 10);
@@ -94,18 +105,3 @@ exports.reportScore = async (req, res) => {
     res.status(500).json({ error: "Failed to report score" });
   }
 };
-
-/*
-
-    // Update the game score
-    await db.query(
-      `UPDATE game SET score_away = $1, score_home = $2 WHERE game_id = $3`, // Ensure primary key matches
-      [homeScore, awayScore, gameId]
-    );
-
-    res.json({ message: "Score reported successfully!" });
-  } catch (error) {
-    console.error("Error updating score:", error);
-    res.status(500).json({ error: "Failed to report score" });
-  }
-}; */
