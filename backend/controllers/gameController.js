@@ -56,7 +56,7 @@ exports.reportScore = async (req, res) => {
   try {
     // Check if the game exists
     const game = await db.query(
-      `SELECT home_team_id, away_team_id FROM game WHERE id = $1`,
+      `SELECT home_team_id, away_team_id FROM game WHERE game_id = $1`, // Ensure primary key is correct
       [gameId]
     );
 
@@ -64,9 +64,42 @@ exports.reportScore = async (req, res) => {
       return res.status(404).json({ error: "Game not found" });
     }
 
+    console.log("gameId:", gameId);
+    console.log("homeScore:", homeScore);
+    console.log("awayScore:", awayScore);
+    console.log("Selected gameId:", gameId);
+
+    // Ensure the scores are integers
+    const homeScoreInt = parseInt(homeScore, 10);
+    const awayScoreInt = parseInt(awayScore, 10);
+
+    // Update the game score
+    const updateResult = await db.query(
+      `UPDATE game SET score_away = $1, score_home = $2 WHERE game_id = $3`,
+      [homeScoreInt, awayScoreInt, gameId]
+    );
+
+    // Log the result of the update query
+    console.log("Update Result:", updateResult); // This will log the result
+
+    if (updateResult.rowCount > 0) {
+      res.json({ message: "Score reported successfully!" });
+    } else {
+      res
+        .status(500)
+        .json({ error: "Failed to update score or no rows were affected." });
+    }
+  } catch (error) {
+    console.error("Error updating score:", error);
+    res.status(500).json({ error: "Failed to report score" });
+  }
+};
+
+/*
+
     // Update the game score
     await db.query(
-      `UPDATE game SET home_score = $1, away_score = $2 WHERE id = $3`,
+      `UPDATE game SET score_away = $1, score_home = $2 WHERE game_id = $3`, // Ensure primary key matches
       [homeScore, awayScore, gameId]
     );
 
@@ -75,4 +108,4 @@ exports.reportScore = async (req, res) => {
     console.error("Error updating score:", error);
     res.status(500).json({ error: "Failed to report score" });
   }
-};
+}; */
