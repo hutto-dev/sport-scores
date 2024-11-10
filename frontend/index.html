@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MS&#179; - Middle School Sports Scores</title>
-    <link rel="stylesheet" href="/frontend/css/home.css" />
+    <link rel="stylesheet" href="/frontend/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,12 +25,21 @@
     />
   </head>
   <body>
-    <nav>
-      <a href="/frontend/index.html">Home</a>
-      <a href="/frontend/html/schoolsList.html">Schools</a>
-      <a href="/frontend/html/sportList.html">Sports</a>
-      <a href="/frontend/html/login.html">Log In</a>
-    </nav>
+    <header>
+      <div class="header-logo">
+        <img class="desktop-logo" src="./css/images/main-horiztonal.png" />
+        <img class="mobile-logo" src="./css/images/ms3_logo.svg" />
+      </div>
+      <div class="nav-links">
+        <nav>
+          <a href="/frontend/index.html">Home</a>
+          <a href="/frontend/html/schoolsList.html">Schools</a>
+          <a href="/frontend/html/sportList.html">Sports</a>
+          <a href="/frontend/html/login.html">Log In</a>
+        </nav>
+        <img class="hamburger-icon" src="./css/images/hamburger.png" />
+      </div>
+    </header>
 
     <script src="JS/script.js"></script>
   </body>
