@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }
@@ -45,6 +45,22 @@
     text-decoration: none;
     margin: 0.5rem;
   }
+
+  .dropdown-container-schools {
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .dropdown-contents-schools {
+    display: none;
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+  }
+
+  .show {
+    display: block;
+  }
 }
 
 /* 
@@ -62,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }
@@ -111,7 +127,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }
@@ -119,6 +135,7 @@
   .header-logo {
     display: flex;
     align-items: flex-end;
+    margin-top: 0.875em;
   }
 
   .desktop-logo {
@@ -165,7 +182,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }
@@ -220,7 +237,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }
@@ -275,7 +292,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid black;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding-bottom: 0.5em;
   }

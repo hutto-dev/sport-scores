@@ -1,0 +1,22 @@
+.dropdown-container {
+}
+
+.schools-button {
+  color: blue;
+}
+
+.dropdown-contents {
+  display: none;
+  background-color: lightcoral;
+  height: 400px;
+  width: 600px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.show {
+  display: block;
+}
