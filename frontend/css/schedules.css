@@ -4,50 +4,13 @@
 */
 
 @media screen and (min-width: 1281px) {
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media screen and (max-width: 480px) {
   * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
   }
 
-  main {
+  body {
     background-color: lightgray;
   }
 
@@ -66,8 +29,696 @@
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 92px;
+    background-color: white;
+    font-family: lalezar, sans-serif;
+    border-radius: 7px;
+    margin: 4px;
+  }
+
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .away-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+  }
+
+  .away-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .away-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .away-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .home-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .home-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .home-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 1.4rem;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .info-date {
+    flex: 1;
+    text-align: center;
+  }
+
+  .info-location {
+    flex: 1.3;
+    text-align: center;
+
+    border-left: 1px solid rgb(191, 190, 190);
+    border-right: 1px solid rgb(191, 190, 190);
+  }
+
+  .info-status {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-family: lalezar, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-family: lalezar, sans-serif;
+    margin-left: 1rem;
+  }
+
+  .schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 92px;
+    background-color: white;
+    font-family: lalezar, sans-serif;
+    border-radius: 7px;
+    margin: 4px;
+  }
+
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .away-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+  }
+
+  .away-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .away-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .away-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .home-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .home-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .home-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 1.4rem;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .info-date {
+    flex: 1;
+    text-align: center;
+  }
+
+  .info-location {
+    flex: 1.3;
+    text-align: center;
+
+    border-left: 1px solid rgb(191, 190, 190);
+    border-right: 1px solid rgb(191, 190, 190);
+  }
+
+  .info-status {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-family: lalezar, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-family: lalezar, sans-serif;
+    margin-left: 1rem;
+  }
+
+  .schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 92px;
+    background-color: white;
+    font-family: lalezar, sans-serif;
+    border-radius: 7px;
+    margin: 4px;
+  }
+
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .away-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+  }
+
+  .away-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .away-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .away-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .home-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .home-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .home-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 1.4rem;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .info-date {
+    flex: 1;
+    text-align: center;
+  }
+
+  .info-location {
+    flex: 1.3;
+    text-align: center;
+
+    border-left: 1px solid rgb(191, 190, 190);
+    border-right: 1px solid rgb(191, 190, 190);
+  }
+
+  .info-status {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-family: lalezar, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-family: lalezar, sans-serif;
+    margin-left: 1rem;
+  }
+
+  .schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 92px;
+    background-color: white;
+    font-family: lalezar, sans-serif;
+    border-radius: 7px;
+    margin: 4px;
+  }
+
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .away-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+  }
+
+  .away-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .away-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .away-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .home-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .home-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .home-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 1.4rem;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .info-date {
+    flex: 1;
+    text-align: center;
+  }
+
+  .info-location {
+    flex: 1.3;
+    text-align: center;
+
+    border-left: 1px solid rgb(191, 190, 190);
+    border-right: 1px solid rgb(191, 190, 190);
+  }
+
+  .info-status {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-family: lalezar, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-family: lalezar, sans-serif;
+    margin-left: 1rem;
+  }
+
+  .schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 92px;
+    background-color: white;
+    font-family: lalezar, sans-serif;
+    border-radius: 7px;
+    margin: 4px;
+  }
+
+  .team-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    flex-direction: column;
+  }
+
+  .away-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.1rem;
+  }
+
+  .away-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .away-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .away-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .home-team-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  .home-logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-name {
+    flex: 1.5;
+
+    text-align: left;
+  }
+
+  .home-score {
+    flex: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
+
+  .logo {
+    height: 1.4rem;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    font-size: 10px;
+  }
+
+  .info-date {
+    flex: 1;
+    text-align: center;
+  }
+
+  .info-location {
+    flex: 1.3;
+    text-align: center;
+
+    border-left: 1px solid rgb(191, 190, 190);
+    border-right: 1px solid rgb(191, 190, 190);
+  }
+
+  .info-status {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media screen and (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  h1 {
+    font-family: lalezar, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  h2 {
+    font-family: lalezar, sans-serif;
+    margin-left: 1rem;
+  }
+
+  .schedule-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
   }
 
   .schedule-box {

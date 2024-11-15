@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MS&#179; - Middle School Sports Scores</title>
-    <link rel="stylesheet" href="/frontend/css/style.css" />
+    <title>MS&#179; - Home</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="/frontend/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,23 +32,39 @@
       </div>
       <div class="nav-links">
         <nav>
-          <a href="/frontend/index.html">Home</a>
+          <a class="a-header" href="/frontend/index.html">Home</a>
 
-          <div class="dropdown-container-schools">
-            <a onclick="dropdownSchools()">Schools</a>
-            <div id="dropdown-schools" class="dropdown-contents-schools">
-              <a href="./html/schoolHomePage.html"></a>
-            </div>
-          </div>
+          <a class="a-header" href="./html/schoolsList.html">Schools</a>
 
-          <a href="/frontend/html/sportList.html">Sports</a>
-          <a href="/frontend/html/login.html">Log In</a>
+          <a class="a-header" href="/frontend/html/sportList.html">Sports</a>
+          <a class="a-header" href="/frontend/html/login.html">Log In</a>
         </nav>
 
         <img class="hamburger-icon" src="./css/images/hamburger.png" />
       </div>
     </header>
+    <main>
+      <div class="container">
+        <div class="hero-left">
+          <div class="hero-left-box">
+            <p class="title">Welcome!</p>
+            <p class="main-intro">
+              This website is a one stop shop for all of your middle school
+              schedule, score, and rankings needs! Currently serving Jefferson
+              and Berkeley Counties <i>only</i>.
+            </p>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img class="main-logo" src="./css/images/main-vertical.png"
+        </div>
+      </div>
+    </main>
 
     <script src="JS/main.js"></script>
   </body>
 </html>
+
+<!-- <div class="dropdown-container-schools">
+  <a onclick="dropdownSchools()">Schools</a>
+  <div id="dropdown-schools" class="dropdown-contents-schools"> -->

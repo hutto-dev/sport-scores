@@ -1,3 +1,4 @@
-function dropdownSchools() {
+/*function dropdownSchools() {
   document.getElementById("dropdown-schools").classList.toggle("show");
 }
+*/
