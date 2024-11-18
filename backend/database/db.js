@@ -1,4 +1,3 @@
-// from chat gpt now
 const { Pool } = require("pg");
 
 // Load environment variables
@@ -14,4 +13,10 @@ const pool = new Pool({
 
 module.exports = {
   query: (text, params) => pool.query(text, params),
+
+  getSchool: async (schoolId) => {
+    const queryText = "SELECT * FROM school WHERE school_id = $1";
+    const result = await pool.query(queryText, [schoolId]);
+    return result.rows[0]; // Returns the first (and should be the only) matching school
+  },
 };

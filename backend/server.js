@@ -1,19 +1,18 @@
 // Load environment variables from .env file
 require("dotenv").config(); // Ensure this is at the top
 
-// Assigning express app (require is a node.js function used to load modules)
+// Assigning express app
 const express = require("express");
 
-// Assigning body-parser that helps break down code into readable JSON
+// Middleware
 const bodyParser = require("body-parser");
-
-// Assigning cors which is used to enable CORS
 const cors = require("cors");
 
 // Assigning all Routes
 const userRoutes = require("./routes/userRoutes");
 const gameRoutes = require("./routes/gameRoutes");
 const rankingRoutes = require("./routes/rankingRoutes");
+const schoolRoutes = require("./routes/schoolRoutes"); // Add this line
 
 // Start the app and listen for requests on the port
 const app = express();
@@ -32,6 +31,13 @@ app.get("/", (req, res) => {
 app.use("/users", userRoutes);
 app.use("/games", gameRoutes);
 app.use("/rankings", rankingRoutes);
+app.use("/school", schoolRoutes); // Add this line
+
+// Global error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ error: err.message });
+});
 
 // Start the server if not in test mode
 if (process.env.NODE_ENV !== "test") {
