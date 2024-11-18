@@ -11,33 +11,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 3rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -56,8 +62,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .away-logo {
@@ -83,7 +88,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .home-logo {
@@ -106,7 +111,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
@@ -140,7 +145,8 @@
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+@media (min-width: 1025px) and (max-width: 1280px) {
   * {
     box-sizing: border-box;
     margin: 0px;
@@ -148,33 +154,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 3rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -193,8 +205,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .away-logo {
@@ -220,7 +231,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .home-logo {
@@ -243,7 +254,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
@@ -285,33 +296,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 3rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -330,8 +347,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .away-logo {
@@ -357,7 +373,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .home-logo {
@@ -380,7 +396,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
@@ -423,33 +439,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 3rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -468,8 +490,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .away-logo {
@@ -495,7 +516,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .home-logo {
@@ -518,7 +539,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
@@ -561,33 +582,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 3rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -606,8 +633,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .away-logo {
@@ -633,7 +659,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .home-logo {
@@ -656,7 +682,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
@@ -699,33 +725,39 @@
   }
 
   body {
-    background-color: lightgray;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 30px;
-    text-align: left;
+    font-size: 2rem;
+    text-align: center;
     margin-left: 1rem;
+    color: white;
   }
 
   h2 {
     font-family: lalezar, sans-serif;
-    margin-left: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
   }
 
   .schedule-container {
     display: flex;
     justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 70vw;
   }
 
   .schedule-box {
     display: flex;
     flex-direction: column;
-    width: 170px;
-    height: 92px;
+    /*width: 10.625rem;
+    height: 5.75rem; */
+    width: 15rem;
+    height: 7rem;
     background-color: white;
     font-family: lalezar, sans-serif;
     border-radius: 7px;
@@ -744,8 +776,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
 
   .away-logo {
@@ -771,7 +802,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
 
   .home-logo {
@@ -794,7 +825,7 @@
   }
 
   .logo {
-    height: 1.4rem;
+    height: 2.2rem;
   }
 
   .info-section {
