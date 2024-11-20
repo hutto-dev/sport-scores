@@ -6,6 +6,12 @@
     <title>MS&#179; || School List</title>
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/schools.css" />
+    <link
+      rel="stylesheet"
+      href="https://indestructibletype.com/fonts/Jost.css"
+      type="text/css"
+      charset="utf-8"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,16 +28,16 @@
   <body>
     <header>
       <div class="header-logo">
-        <img class="desktop-logo" src="../css/images/main-horiztonal.png" />
+        <img class="desktop-logo" src="../css/images/newLogo.svg" />
       </div>
       <div class="nav-links">
         <nav>
-          <a class="a-header" href="/frontend/index.html">Home</a>
+          <a class="a-header" href="/frontend/index.html">HOME</a>
 
-          <a class="a-header" href="../html/schoolsList.html">Schools</a>
+          <a class="a-header" href="./html/schoolsList.html">SCHOOLS</a>
 
-          <a class="a-header" href="../html/sportList.html">Sports</a>
-          <a class="a-header" href="../html/login.html">Log In</a>
+          <a class="a-header" href="/frontend/html/sportList.html">SPORTS</a>
+          <a class="a-header" href="/frontend/html/login.html">REPORT SCORES</a>
         </nav>
 
         <img class="hamburger-icon" src="../css/images/hamburger.png" />
@@ -39,39 +45,57 @@
     </header>
 
     <main>
-      <h1>Select a School</h1>
-      <ul id="schoolsList">
-        <li><a href="schoolHome.html?schoolId=1">Charles Town</a></li>
-        <li><a href="schoolHome.html?schoolId=2">Harpers Ferry</a></li>
-        <!-- More schools here -->
-      </ul>
-      <script src="../js/schoolsList.js"></script>
-
-      <!--
-      
-        <div class="container">
-        <div class="title">Schools</div>
-        <div class="school-container">
-          <div class="school-container-left">
-            <nav class="school-links">
-              <a href="./schoolHomePage.html">Charles Town</a><br>
-              <a href="./schoolHomePage.html">Harpers Ferry</a><br>
-              <a href="./schoolHomePage.html">Shepherdstown</a><br>
-              <a href="./schoolHomePage.html">Wildwood</a><br>
-              <a href="./schoolHomePage.html">Hedgesville</a><br></div></nav>
-          <div class="school-container-right">
-            <nav class="school-links">
-              <a href="./schoolHomePage.html">North</a><br>
-              <a href="./schoolHomePage.html">Mountain Ridge</a><br>
-              <a href="./schoolHomePage.html">Musselman</a><br>
-              <a href="./schoolHomePage.html">South</a><br>
-              <a href="./schoolHomePage.html">Spring Mills</a></nav>
+      <div class="container">
+        <div class="title">
+          <h1>SELECT A SCHOOL</h1>
+          <div class="school-links-container">
+            <ul id="schoolsList">
+              <li>
+                <a href="schoolHome.html?schoolId=1" class="ctms"
+                  >CHARLES TOWN</a
+                >
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=2" class="hfms"
+                  >HARPERS FERRY</a
+                >
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=3" class="sms"
+                  >SHEPHERDSTOWN</a
+                >
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=4" class="wms">WILDWOOD</a>
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=5" class="hms">HEDGESVILLE</a>
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=6" class="north">NORTH</a>
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=7" class="mrms"
+                  >MOUNTAIN RIDGE</a
+                >
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=8" class="mms">MUSSELMAN</a>
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=9" class="south">SOUTH</a>
+              </li>
+              <li>
+                <a href="schoolHome.html?schoolId=10" class="smms"
+                  >SPRING MILLS</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-        </div>
-        </div>
-      
-      
-      -->
+
+      <script src="../js/schoolsList.js"></script>
     </main>
 
     <script src="script.js"></script>

@@ -20,14 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((schoolData) => {
       document.getElementById("schoolName").textContent = schoolData.name;
 
-      const teamsDiv = document.getElementById("teams");
-      schoolData.teams.forEach((team) => {
-        const teamLink = document.createElement("a");
-        teamLink.href = `schedule.html?schoolId=${schoolId}&teamId=${team.id}`;
-        teamLink.textContent = team.name;
-        teamsDiv.appendChild(teamLink);
-        teamsDiv.appendChild(document.createElement("br")); // New line after each team
-      });
+      // Comment out or remove this part if not needed:
+      // const teamsDiv = document.getElementById("teams");
+      // schoolData.teams.forEach((team) => {
+      //   const teamLink = document.createElement("a");
+      //   teamLink.href = `schedule.html?schoolId=${schoolId}&teamId=${team.id}`;
+      //   teamLink.textContent = team.name;
+      //   teamsDiv.appendChild(teamLink);
+      //   teamsDiv.appendChild(document.createElement("br"));
+      // });
     })
     .catch((error) => console.error("Error fetching school data:", error));
 });

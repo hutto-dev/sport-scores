@@ -22,16 +22,16 @@
   <body>
     <header>
       <div class="header-logo">
-        <img class="desktop-logo" src="../css/images/main-horiztonal.png" />
+        <img class="desktop-logo" src="../css/images/newLogo.svg" />
       </div>
       <div class="nav-links">
         <nav>
-          <a class="a-header" href="/frontend/index.html">Home</a>
+          <a class="a-header" href="/frontend/index.html">HOME</a>
 
-          <a class="a-header" href="../html/schoolsList.html">Schools</a>
+          <a class="a-header" href="./html/schoolsList.html">SCHOOLS</a>
 
-          <a class="a-header" href="../html/sportList.html">Sports</a>
-          <a class="a-header" href="../html/login.html">Log In</a>
+          <a class="a-header" href="/frontend/html/sportList.html">SPORTS</a>
+          <a class="a-header" href="/frontend/html/login.html">REPORT SCORES</a>
         </nav>
 
         <img class="hamburger-icon" src="../css/images/hamburger.png" />
@@ -39,52 +39,19 @@
     </header>
 
     <main>
-      <h1 id="schoolName">School Name</h1>
+      <h1 id="schoolName">SCHOOL NAME</h1>
       <div id="teams">
-        <!-- Team selection will be dynamically populated -->
-      </div>
-
-      <!--
-      
-      <div class="title">
-        <h1>Charles Town</h1>
-      </div>
-      <div class="subtitle">
-        <h2>Home of the Panthers</h2>
-      </div>
-      <div class="container">
-        <div class="boys-basketball">
-          BOYS BASKETBALL
-          <div class="jv-box">
-            JV
-            <a class="team-links" href="./schedule.html">SCHEDULE & SCORES</a>
-            <a class="team-links" href="./schedule.html">RANKINGS</a>
-          </div>
-          <div class="jv-box">
-            VARSITY
-            <a class="team-links" href="./schedule.html">SCHEDULE & SCORES</a>
-            <a class="team-links" href="./schedule.html">RANKINGS</a>
-          </div>
-        </div>
-
-        <div class="girls-basketball">
-          GIRLS BASKETBALL
-          <div class="jv-box">
-            JV
-            <a class="team-links" href="./schedule.html">SCHEDULE & SCORES</a>
-            <a class="team-links" href="./schedule.html">RANKINGS</a>
-          </div>
-          <div class="jv-box">
-            VARSITY
-            <a class="team-links" href="./schedule.html">SCHEDULE & SCORES</a>
-            <a class="team-links" href="./schedule.html">RANKINGS</a>
-          </div>
+        <!-- Here we'll manually add links for each team -->
+        <div class="team-link">
+          <p><strong>Girls Basketball Team:</strong></p>
+          <ul>
+            <li><a href="schedule.html?schoolId=1&teamId=9">Varsity</a></li>
+            <li><a href="schedule.html?schoolId=1&teamId=10">JV</a></li>
+            <li><a href="schedule.html?schoolId=1&teamId=3">Freshmen</a></li>
+            <!-- Add more team links as needed -->
+          </ul>
         </div>
       </div>
-      
-      
-      
-      -->
     </main>
 
     <script src="../js/school.js"></script>

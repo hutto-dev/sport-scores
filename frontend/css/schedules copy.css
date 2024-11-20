@@ -11,7 +11,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: rgb(56 181 255);
     font-size: 1.125 rem;
     line-height: 1.6;
     font-family: Jost;
@@ -22,7 +22,7 @@
     font-size: 3rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
@@ -157,7 +157,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: rgb(56 181 255);
     font-size: 1.125 rem;
     line-height: 1.6;
     font-family: Jost;
@@ -168,7 +168,7 @@
     font-size: 3rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
@@ -302,7 +302,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: rgb(56 181 255);
     font-size: 1.125 rem;
     line-height: 1.6;
     font-family: Jost;
@@ -313,7 +313,7 @@
     font-size: 3rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
@@ -448,26 +448,25 @@
   }
 
   body {
-    background-color: black;
-    font-family: jost, sans-serif;
+    background-color: rgb(56 181 255);
     font-size: 1.125 rem;
     line-height: 1.6;
     font-family: Jost;
   }
 
   h1 {
-    font-family: jost, sans-serif;
-    font-style: italic;
+    font-family: lalezar, sans-serif;
     font-size: 3rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
-    font-size: 2.3rem;
+    font-family: lalezar, sans-serif;
+    font-size: 2rem;
     text-align: center;
-    color: white;
+    color: red;
   }
 
   .schedule-container {
@@ -486,7 +485,7 @@
     width: 15rem;
     height: 7rem;
     background-color: white;
-    font-family: Jost, sans-serif;
+    font-family: lalezar, sans-serif;
     border-radius: 7px;
     margin: 4px;
   }
@@ -595,10 +594,7 @@
   }
 
   body {
-    background-color: black;
-    font-size: 1.125 rem;
-    line-height: 1.6;
-    font-family: Jost;
+    background-color: rgb(38, 38, 39);
   }
 
   h1 {
@@ -606,7 +602,7 @@
     font-size: 3rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
@@ -741,7 +737,7 @@
   }
 
   body {
-    background-color: black;
+    background-color: rgb(56 181 255);
     font-size: 1.125 rem;
     line-height: 1.6;
     font-family: Jost;
@@ -749,10 +745,10 @@
 
   h1 {
     font-family: lalezar, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     margin-left: 1rem;
-    color: rgb(56 181 255);
+    color: white;
   }
 
   h2 {
