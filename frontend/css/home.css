@@ -3,29 +3,29 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media screen and (min-width: 1281px) {
+@media (min-width: 1281px) {
   body {
-    background-color:rgb(56 181 255);
-    }
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .welcome {
-    margin-top: 8em;
-    font-family: Jost;
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 2.2rem;
-    padding: 1em 3em;
-    border: 5px solid black;
-    background-color: white;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
 }
 
 /* 
@@ -33,53 +33,59 @@
   ##Screen = B/w 1025px to 1280px
 */
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   body {
-    background-color: rgb(83 113 255);
-  }
-
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
-
-  .welcome {
-    margin-top: 8em;
-    font-family: bungee;
-    font-size: 2rem;
-    padding: 1em 3em;
-    border: 5px solid black;
-    background-color: white;
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
+}
+
 /* 
-  ##Device = Tablets, Ipads (portrait) ////HAMBURGER SWITCH /////
+  ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
-    background-color: rgb(83 113 255);
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
-  .welcome {
-    margin-top: 8em;
-    font-family: bungee;
-    font-size: 2rem;
-    padding: 1em 3em;
-    border: 5px solid black;
-    background-color: white;
-  }
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
 }
 
 /* 
@@ -87,26 +93,29 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   body {
-    background-color: rgb(83 113 255);
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
-  .welcome {
-    margin-top: 8em;
-    font-family: bungee;
-    font-size: 2rem;
-    padding: 1em 3em;
-    border: 5px solid black;
-    background-color: white;
-  }
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
 }
 
 /* 
@@ -116,22 +125,55 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   body {
-    background-color: rgb(83 113 255);
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
+}
 
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
-  .welcome {
-    margin-top: 8em;
-    font-family: bungee;
-    font-size: 2rem;
-    padding: 1em 3em;
-    border: 5px solid black;
-    background-color: white;
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    box-sizing: border-box;
+    background-color: rgb(56 181 255);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.welcome {
+  margin-top: 8em;
+  font-size: 2.2rem;
+  padding: 1em 3em;
+  border: 5px solid black;
+  background-color: white;
 }

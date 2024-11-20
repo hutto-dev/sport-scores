@@ -11,9 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return;
   }
 
-  // Temporary mapping of team IDs to names (You'll need to populate this accurately)
   const teamIdToName = {
-    1: "CTMS",
+    1: "Charles Town Varsity Girls Basketball",
     2: "Harpers Ferry Varsity Girls Basketball",
     3: "Shepherdstown Varsity Girls Basketball",
     4: "Wildwood Varsity Girls Basketball",
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // ... Add more mappings as needed
   };
 
-  // Use the mapping to get the team name
   let teamName = teamIdToName[teamId] || "Unknown Team";
   document.querySelector("#dynamicTitle").textContent = teamName;
 
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         data.forEach((game, index) => {
           if (index < scheduleBoxes.length) {
             const scheduleBox = scheduleBoxes[index];
-            // Handle cases where abbreviation might be undefined
             const awayAbbreviation =
               game.away_team_abbreviation || game.away_team_name || "default";
             const homeAbbreviation =
@@ -77,15 +74,28 @@ document.addEventListener("DOMContentLoaded", () => {
               game.home_score || "TBD";
 
             // Game Info
-            scheduleBox.querySelector(".info-date").textContent = `Date: ${
-              game.date || "TBD"
+            // Format date to mm/dd/yy
+            if (game.date) {
+              const date = new Date(game.date);
+              const formattedDate = `${(date.getMonth() + 1)
+                .toString()
+                .padStart(2, "0")}/${date
+                .getDate()
+                .toString()
+                .padStart(2, "0")}/${date.getFullYear().toString().slice(-2)}`;
+              scheduleBox.querySelector(
+                ".info-date"
+              ).textContent = `${formattedDate}`;
+            } else {
+              scheduleBox.querySelector(".info-date").textContent = "Date: TBD";
+            }
+
+            scheduleBox.querySelector(".info-location").textContent = `${
+              game.location || "TBD"
             }`;
-            scheduleBox.querySelector(
-              ".info-location"
-            ).textContent = `Location: ${game.location || "TBD"}`;
-            scheduleBox.querySelector(".info-status").textContent = `Status: ${
+            scheduleBox.querySelector(".info-status").textContent = `${
               game.home_score !== null && game.away_score !== null
-                ? "Final"
+                ? "Scheduled"
                 : game.date
                 ? "Scheduled"
                 : "TBD"
@@ -93,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
 
-        // Hide unused boxes
         for (let i = data.length; i < scheduleBoxes.length; i++) {
           scheduleBoxes[i].style.display = "none";
         }
