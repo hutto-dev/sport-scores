@@ -12,6 +12,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;
@@ -56,23 +60,6 @@
   }
 }
 
-/* .dropdown-container-schools {
-    cursor: pointer;
-    position: absolute;
-  }
-
-  .dropdown-contents-schools {
-    display: none;
-    background-color: lightblue;
-    height: 100px;
-    width: 100px;
-  }
-
-  .show {
-    display: block;
-  }
-} */
-
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -87,6 +74,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;
@@ -145,6 +136,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;
@@ -209,6 +204,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;
@@ -273,6 +272,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;
@@ -337,6 +340,10 @@
 
   header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
     justify-content: space-between;
     border-bottom: 5px solid black;
     width: 100vw;

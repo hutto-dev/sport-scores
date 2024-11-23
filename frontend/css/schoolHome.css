@@ -1,10 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-  /* CSS */
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
+
+  .title-logo {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .title-words-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-words {
+    font-size: 3.5rem;
+  }
+
+  .team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 400px;
+    background-color: white;
+    font-family: bungee;
+    border: 5px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    margin-right: 3em;
+  }
+
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .team-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
+  }
 }
 
 /* 
@@ -13,7 +127,118 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  /* CSS */
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
+
+  .title-logo {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .title-words-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-words {
+    font-size: 3.5rem;
+  }
+
+  .team-container {
+    display: flex;
+
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 400px;
+    background-color: white;
+    font-family: bungee;
+    border: 5px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    margin-right: 3em;
+  }
+
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .team-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
+  }
 }
 
 /* 
@@ -22,75 +247,116 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  a {
-    color: black;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #008a97;
-  }
-
-  .title {
-    text-align: center;
-    font-family: bungee;
-    font-size: 2rem;
-    color: rgb(51, 0, 128);
-  }
-
-  .subtitle {
-    text-align: center;
-    font-family: bungee;
-    font-size: 1.5rem;
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
   }
 
   .container {
     display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
+
+  .title-logo {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .title-words-container {
+    display: flex;
     justify-content: center;
   }
 
-  .boys-basketball,
-  .girls-basketball {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 1.5rem;
-    background-color: rgb(219, 223, 233);
-    padding: 1.5em 3em;
-    border: 5px solid black;
-    border-radius: 5px;
-    margin-right: 2em;
-    font-family: roboto condensed;
+  .title-words {
+    font-size: 2.7rem;
   }
 
-  .jv-box,
-  .varsity-box {
+  .team-container {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 400px;
     background-color: white;
-    font-size: 1.1rem;
-    width: 100%;
-    padding: 1em;
+    font-family: bungee;
     border: 5px solid black;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
   }
 
-  .jv-box:hover,
-  .varsity-box:hover {
-    background-color: rgb(148, 72, 255);
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
   }
 
   .team-links {
-    margin-top: 1em;
-    font-size: 1em;
+    display: flex;
+    flex-direction: column;
   }
 
-  .team-links:hover {
-    color: white;
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
   }
 }
 
@@ -100,7 +366,119 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* CSS */
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
+
+  .title-logo {
+    display: flex;
+    flex: 1;
+  }
+
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .title-words-container {
+    display: flex;
+    flex: 3;
+
+    justify-content: center;
+  }
+
+  .title-words {
+    font-size: 2.5rem;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 400px;
+    background-color: white;
+    font-family: bungee;
+    border: 5px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .team-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
+  }
 }
 
 /* 
@@ -109,7 +487,119 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* CSS */
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
+
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
+
+  .title-logo {
+    display: flex;
+    flex: 1;
+  }
+
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
+
+  .title-words-container {
+    display: flex;
+    flex: 3;
+
+    justify-content: center;
+  }
+
+  .title-words {
+    font-size: 2.2rem;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 400px;
+    background-color: white;
+    font-family: bungee;
+    border: 5px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .team-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
+  }
 }
 
 /* 
@@ -118,41 +608,116 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  /* CSS */
-}
+  body {
+    box-sizing: border-box;
+    background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
 
-a {
-  color: black;
-  text-decoration: none;
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+  }
 
-a:hover {
-  color: #008a97;
-}
+  .title-container {
+    display: flex;
+    color: rgb(64, 0, 128);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(220, 223, 255);
+  }
 
-.title {
-}
+  .title-logo {
+    display: flex;
+    flex: 1;
+  }
 
-.subtitle {
-}
+  .title-logo-image {
+    width: 100px;
+    margin: auto;
+  }
 
-.container {
-}
+  .title-words-container {
+    display: flex;
+    flex: 2;
 
-.boys-basketball,
-.girls-basketball {
-}
+    justify-content: center;
+  }
 
-.jv-box,
-.varsity-box {
-}
+  .title-words {
+  }
 
-.jv-box:hover,
-.varsity-box:hover {
-}
+  .team-container {
+    display: flex;
+    flex-direction: column;
 
-.team-links {
-}
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(74, 3, 168);
+  }
 
-.team-links:hover {
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: white;
+    font-family: bungee;
+    border: 5px solid black;
+    border-radius: 7px;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+
+  .team-title {
+    font-family: bungee;
+
+    justify-content: center;
+    border-radius: 7px;
+    font-size: 1.4rem;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  .team-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .varsity-links,
+  .jv-links {
+    color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .links-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1em;
+  }
+
+  .schedule-link,
+  .ranking-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  .schedule-link:hover,
+  .ranking-link:hover {
+    background-color: rgb(220, 223, 255);
+  }
 }
