@@ -20,8 +20,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    max-width: 35%;
-    margin-top: 70px;
+    max-width: 500px;
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;
@@ -114,8 +114,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    width: 35%;
-    margin-top: 70px;
+    width: 500px;
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;
@@ -208,8 +208,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    width: 35%;
-    margin-top: 70px;
+    width: 500px;
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;
@@ -302,8 +302,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    width: 35%;
-    margin-top: 70px;
+    width: 500px;
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;
@@ -396,8 +396,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    width: 35%;
-    margin-top: 70px;
+    width: 65%;
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;
@@ -490,8 +490,8 @@
     justify-content: center;
     margin: auto;
     background-color: white;
-    width: 35%;
-    margin-top: 70px;
+    width: 35%
+    margin-top: 8em;
     border: 5px solid black;
     border-radius: 5px;
     padding-top: 1em;

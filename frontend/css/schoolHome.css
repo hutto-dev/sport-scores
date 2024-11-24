@@ -8,9 +8,90 @@
 */
 
 @media (min-width: 1281px) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 39, 212);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: navy;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: navy;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 39, 212);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -23,7 +104,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -31,7 +112,106 @@
     font-size: 2rem;
     justify-content: center;
     align-items: center;
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(220, 221, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -53,11 +233,74 @@
     font-size: 3.5rem;
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -90,9 +333,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -117,7 +423,7 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
 
@@ -127,9 +433,90 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -142,7 +529,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -151,6 +538,105 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(220, 223, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -172,12 +658,74 @@
     font-size: 3.5rem;
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
-
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -210,9 +758,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -237,7 +848,7 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
 
@@ -247,9 +858,90 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -262,7 +954,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -271,6 +963,105 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(220, 223, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -292,12 +1083,84 @@
     font-size: 2.7rem;
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -329,9 +1192,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -356,7 +1282,7 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
 
@@ -366,9 +1292,90 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -381,7 +1388,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -390,6 +1397,105 @@
     text-align: center;
     align-items: center;
     background-color: rgb(220, 223, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -413,12 +1519,84 @@
     font-size: 2.5rem;
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -450,9 +1628,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -477,7 +1718,7 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
 
@@ -487,9 +1728,90 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -502,7 +1824,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -511,6 +1833,105 @@
     text-align: center;
     align-items: center;
     background-color: rgb(220, 223, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -534,12 +1955,84 @@
     font-size: 2.2rem;
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -571,9 +2064,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -598,7 +2154,7 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
 
@@ -608,9 +2164,90 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
+  .ctms-body {
     box-sizing: border-box;
     background-color: rgb(74, 3, 168);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hfms-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .sms-body {
+    box-sizing: border-box;
+    background-color: rgb(223, 1, 1);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .wms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .hms-body {
+    box-sizing: border-box;
+    background-color: rgb(11, 1, 150);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .north-body {
+    box-sizing: border-box;
+    background-color: rgb(24, 8, 235);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mrms-body {
+    box-sizing: border-box;
+    background-color: rgb(0, 171, 0);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .mms-body {
+    box-sizing: border-box;
+    background-color: green;
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .south-body {
+    box-sizing: border-box;
+    background-color: rgb(120, 120, 120);
+    font-family: Jost, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .smms-body {
+    box-sizing: border-box;
+    background-color: rgb(198, 0, 0);
     font-family: Jost, sans-serif;
     font-weight: 900;
     font-style: italic;
@@ -623,7 +2260,7 @@
     margin-top: 5em;
   }
 
-  .title-container {
+  .ctms-title-container {
     display: flex;
     color: rgb(64, 0, 128);
     font-family: bungee;
@@ -632,6 +2269,105 @@
     text-align: center;
     align-items: center;
     background-color: rgb(220, 223, 255);
+  }
+
+  .hfms-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .sms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
+  }
+
+  .wms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .hms-title-container {
+    display: flex;
+    color: navy;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .north-title-container {
+    display: flex;
+    color: rgb(0, 39, 212);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 229, 255);
+  }
+
+  .mrms-title-container {
+    display: flex;
+    color: rgb(0, 160, 27);
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 220);
+  }
+
+  .mms-title-container {
+    display: flex;
+    color: green;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 255, 226);
+  }
+
+  .south-title-container {
+    display: flex;
+    color: black;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+  }
+
+  .smms-title-container {
+    display: flex;
+    color: red;
+    font-family: bungee;
+    font-weight: 100;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 220, 220);
   }
 
   .title-logo {
@@ -654,13 +2390,84 @@
   .title-words {
   }
 
-  .team-container {
+  .ctms-team-container {
     display: flex;
     flex-direction: column;
-
     margin: auto;
     margin-top: 1.5em;
     background-color: rgb(74, 3, 168);
+  }
+
+  .hfms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .sms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(223, 1, 1);
+  }
+
+  .wms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .hms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: navy;
+  }
+
+  .north-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 39, 212);
+  }
+
+  .mrms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(0, 171, 0);
+  }
+
+  .mms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: green;
+  }
+
+  .south-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(120, 120, 120);
+  }
+
+  .smms-team-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: rgb(198, 0, 0);
   }
 
   .team-box {
@@ -691,9 +2498,72 @@
     flex-direction: column;
   }
 
-  .varsity-links,
-  .jv-links {
+  .ctms-varsity-links,
+  .ctms-jv-links {
     color: rgb(140, 0, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hfms-varsity-links,
+  .hfms-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .sms-varsity-links,
+  .sms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .wms-varsity-links,
+  .wms-jv-links {
+    color: rgb(246, 111, 0);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .hms-varsity-links,
+  .hms-jv-links {
+    color: rgb(182, 170, 58);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .north-varsity-links,
+  .north-jv-links {
+    color: rgb(0, 110, 255);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mrms-varsity-links,
+  .mrms-jv-links {
+    color: rgb(255, 70, 70);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .mms-varsity-links,
+  .mms-jv-links {
+    color: rgb(239, 27, 27);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .south-varsity-links,
+  .south-jv-links {
+    color: rgb(163, 163, 163);
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+  }
+
+  .smms-varsity-links,
+  .smms-jv-links {
+    color: navy;
     font-size: 1.8rem;
     margin-bottom: 0.5em;
   }
@@ -718,6 +2588,6 @@
 
   .schedule-link:hover,
   .ranking-link:hover {
-    background-color: rgb(220, 223, 255);
+    background-color: rgb(56 181 255);
   }
 }
